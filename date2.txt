@@ -1,3 +1,14 @@
 20-11-25
 alluri the goat
 messi the goat
+docker must run in the bg
+minikube start
+minikube status
+docker pull nginz
+kubectl create deployment internal ==image=nginz
+kubectl get deployments
+kubectl expose deployment internal --type=NodePort --port=8080 --target-port=80
+kubectl get services
+kubectl port-forward svc/internal 5000:8080
+kubectl scale deployment internal --replicas=4
+kubectl get deployments
